@@ -1,0 +1,18 @@
+---
+id: 0
+name: Mainnet deployment
+network: mainnet
+stacks-node: "https://api.hiro.so"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoin.blockstack.com:8332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: stx-clawbot
+            expected-sender: SP29VJHHXFPRQMW6W1VDE9NVR4AZ04V44H3T1X01Y
+            cost: 40360
+            path: contracts/stx-clawbot.clar
+            anchor-block-only: true
+            clarity-version: 4
+      epoch: "3.3"
