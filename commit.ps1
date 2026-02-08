@@ -14,7 +14,7 @@ $allFiles = ($untrackedFiles + $modifiedFiles) | Select-Object -Unique
 
 # Comprehensive commit message for Molt Vault project
 # Comprehensive commit message for xWallet project
-$commitMessage = "feat: initial STX-Clawbot - Secure wallet for claw bots to spend and receive STX on Stacks blockchain using Clarity"
+$commitMessage = "feat: added clawbot frontend"
 # Commit each file individually
 foreach ($file in $allFiles) {
     if ($file -ne "") {
